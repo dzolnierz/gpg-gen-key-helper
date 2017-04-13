@@ -1,0 +1,14 @@
+%echo Generating OpenPGP key
+Key-Type: RSA
+Key-Length: 4096
+Subkey-Type: RSA
+Subkey-Length: 4096
+Name-Real: _REAL_NAME_
+Name-Comment: RSA-4096 with passphrase
+Name-Email: _EMAIL_
+Expire-Date: 0
+Passphrase: _PASSPHRASE_ 
+%pubring rsa-4096.pub
+%secring rsa-4096.sec
+%commit
+%echo done
